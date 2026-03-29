@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>time-dial</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+        background: #101820;
+        color: #f4ede4;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at 20% 20%, rgba(249, 180, 45, 0.18), transparent 30%),
+          radial-gradient(circle at 80% 15%, rgba(83, 164, 255, 0.22), transparent 30%),
+          linear-gradient(135deg, #101820 0%, #172737 100%);
+      }
+
+      main {
+        width: min(640px, calc(100% - 48px));
+        padding: 36px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 28px;
+        background: rgba(8, 15, 22, 0.7);
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        letter-spacing: -0.04em;
+      }
+
+      p {
+        margin: 0 0 24px;
+        line-height: 1.7;
+      }
+
+      nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      a {
+        padding: 12px 18px;
+        border-radius: 999px;
+        color: #101820;
+        background: #f9b42d;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      a.secondary {
+        background: transparent;
+        color: #f4ede4;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>time-dial</h1>
+      <p>시간과 일정 관련 프로젝트를 위한 기본 랜딩 페이지입니다.</p>
+      <nav>
+        <a href="./privacy.html">개인정보처리방침</a>
+        <a class="secondary" href="../index.html">메인으로</a>
+      </nav>
+    </main>
+  </body>
+</html>
